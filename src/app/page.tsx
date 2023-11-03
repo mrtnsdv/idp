@@ -55,7 +55,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center p-10 overflow-y-auto">
       <div className="mb-8 text-center">
         <div className="text-4xl font-bold text-[#d90429] mb-2">Welcome, Employee</div>
-        <div className="text-sm">Let's start to complete your todo list today! </div>
+        <div className="text-sm">Let's start to complete your task today! </div>
       </div>
 
       {
@@ -65,7 +65,7 @@ export default function Home() {
       <div className="flex gap-2 w-full mb-3">
         <div className="w-1/2 p-4">
           <div className="mb-6">
-            <div className="font-semibold text-2xl mb-2">Todo List</div>
+            <div className="font-semibold text-2xl mb-2">Task List</div>
             <div className="flex gap-2 mb-4">
               <input 
                 type="text" 
@@ -91,8 +91,8 @@ export default function Home() {
               }
             </ul>
           </div>
-          <div className="mb-2">Uncompleted list: <span className="font-semibold text-[#d90429]">{ dataList.length }</span></div>
-          <Button title="Remove All Lists" onClick={() => removeAllList()} />
+          <div className="mb-2">Uncompleted task: <span className="font-semibold text-[#d90429]">{ dataList.length }</span></div>
+          <Button title="Remove All Task" onClick={() => removeAllList()} />
         </div>
         <div className="w-1/2">
           <CompleteList datas={dataComplete} />
